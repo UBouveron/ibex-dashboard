@@ -20,7 +20,8 @@ router.post('/query', (req, res) => {
     parameters: parameters || [],
   };
 
-  const url = `https://${host}.documents.azure.com/${resourceLink}/docs`;
+  // const url = `https://${host}.documents.azure.com/${resourceLink}/docs`;
+    const url = `https://localhost:8081`;
 
   request(url, {
     method: 'POST',
